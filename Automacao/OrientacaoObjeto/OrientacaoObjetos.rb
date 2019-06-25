@@ -23,9 +23,10 @@ def method_name
     #Corpo do metodo
 end
 
+end
 
-
-
+#Herança herda os métodos da classe ClassName
+class heranca < ClassName
 end
 
 objeto = ClassName.new
