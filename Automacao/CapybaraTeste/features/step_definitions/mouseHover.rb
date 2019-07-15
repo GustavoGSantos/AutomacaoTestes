@@ -1,6 +1,6 @@
 Quando("Seleciono o mouse hover") do
     visit '/iteracoes/mousehover'
-    find('.activator').hover.click
-    #find('.activator').hover
+    #find('.card-content').hover.click
+    find('.card-content').hover
     sleep(4)
 end  
