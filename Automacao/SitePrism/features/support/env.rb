@@ -1,6 +1,9 @@
 require 'capybara/cucumber'
 require 'capybara'
 require 'site_prism'
+require_relative 'pageHelper.rb'
+
+World(PageObjects)
 
 Capybara.configure do |config|
     #selenium selenium_chrome selenium_chrome_headless(para rodar no jnekins, roda sem browser)
