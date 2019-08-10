@@ -17,6 +17,8 @@ Capybara.register_driver :selenium do |app|
         Capybara::Selenium::Driver.new(app, :browser => :chrome, 
         desired_capabilities: Selenium::WebDriver::Remote::Capabilities.chrome('chromeOptions' => {'args' => ['--headless', 'disable-gpu']})
         )
+    end
+end
     #elsif BROWSER.eql?('firefox')
     #    Capybara::Selenium::Driver.new(app, :browser => :firefox, :marionette => true)
     #elsif BROWSER.eql?('ie')
@@ -26,8 +28,6 @@ Capybara.register_driver :selenium do |app|
     #elsif BROWSER.eql?('poltergeist')
     #    options = {js_errors: false}
     #    Capybara::Poltergeist::Driver.new(app, options)
-    end
-end
 
 Capybara.configure do |config|
     #selenium selenium_chrome selenium_chrome_headless(para rodar no jnekins, roda sem browser)
